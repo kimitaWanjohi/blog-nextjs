@@ -23,7 +23,7 @@ export default function Home({ posts }) {
           {
             posts.map((post, index) => (
               <div key={index}>
-                <Link href="posts/[id]" as={`posts/2`}>
+                <Link href="posts/[id]" as={`posts/${post.id}`}>
                 <a>{post.title}</a> 
                 </Link>
               </div> 
